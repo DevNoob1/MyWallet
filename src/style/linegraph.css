@@ -1,0 +1,8 @@
+#myChart {
+    width: 950px;
+    height: 500px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px;
+    padding: 1%;
+    margin-left: 30px;
+}

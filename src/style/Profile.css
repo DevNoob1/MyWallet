@@ -1,0 +1,109 @@
+.profile {
+
+    display: flex;
+    gap: 20px;
+    margin-left: -50px;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 3%;
+}
+
+.finance {
+    width: 80%;
+    /* background-color: aliceblue; */
+    /* height: 40; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+
+.card {
+    display: flex;
+    width: 20%;
+    gap: 10px;
+    flex-direction: column;
+    max-width: 800px;
+    background-color: #1f1f1f;
+    /* Dark background */
+    color: #d2d2d2;
+    /* Light text */
+    border-radius: 10px;
+    overflow: hidden;
+    height: 600px;
+}
+
+.left-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-side {
+    text-align: start;
+    flex: 1;
+    background-color: #191919;
+    /* Darker background */
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.details h2 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.details p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.styled-box {
+    background-color: #2e2e2e;
+    /* Darker box background */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+    /* Add transition */
+}
+
+.styled-box h3 {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+/* Add hover effect */
+.styled-box:hover {
+    background-color: #3f3f3f;
+    /* Darker color on hover */
+}
+
+.goal {
+    width: 80%;
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px;
+    padding: 1%;
+}
+
+
+
+
+.background-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.background-circles circle {
+    opacity: 0.5;
+}

@@ -1,0 +1,63 @@
+.custom-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: #1a1a1a;
+    /* Dark black */
+}
+
+.custom-button1 {
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    padding: 12px 24px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: #d2d1d1;
+    /* Dark black */
+}
+
+.custom-button:hover {
+    background-color: #E63946;
+    /* Red on hover */
+}
+
+.custom-button1:hover {
+    background-color: #E63946;
+    color: #d2d1d1;
+    /* Red on hover */
+}
+
+/* Add this CSS in your existing style file or create a new CSS file */
+.fade-in {
+    opacity: 1;
+    /* Initially set opacity to 0 */
+    animation: ola ease-in-out 2s;
+    /* Apply 'ola' animation with ease-in-out easing and 2s duration */
+}
+
+@keyframes ola {
+    0% {
+        opacity: 0;
+        /* Start of animation: opacity is 0 */
+    }
+
+    100% {
+        opacity: 1;
+        /* End of animation: opacity is 1 (fully visible) */
+    }
+}

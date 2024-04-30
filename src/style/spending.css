@@ -1,0 +1,79 @@
+.expense-form {
+    background-color: #2c2733;
+    color: #fff;
+    width: 60%;
+    padding: 20px;
+    margin-left: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: border 0.3s ease-in-out;
+}
+
+.expense-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: larger;
+    color: #fff;
+    text-align: left;
+    font-weight: 100;
+}
+
+.expense-form input[type="number"],
+.expense-form input[type="text"],
+.expense-form input[type="date"],
+.expense-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #524c68;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.expense-form input[type="number"]:focus,
+.expense-form input[type="text"]:focus,
+.expense-form input[type="date"]:focus,
+.expense-form button:focus {
+    color: #fff;
+    outline: none;
+}
+
+.expense-form input[type="number"]:hover,
+.expense-form input[type="text"]:hover,
+.expense-form input[type="date"]:hover,
+.expense-form button:hover,
+.expense-form select:hover {
+    background-color: #6a4c93;
+    color: #fff;
+}
+
+.expense-form button {
+    font-weight: bold;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    background-color: #6a4c93;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.category-item:hover {
+    background-color: #845eae;
+}
+
+.category-item.active {
+    background-color: #845eae;
+}

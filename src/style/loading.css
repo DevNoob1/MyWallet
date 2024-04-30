@@ -1,0 +1,31 @@
+svg {
+    /* margin-bottom: 200px; */
+    /* background-color: red; */
+    height: 200px;
+}
+
+svg text {
+    font-family: roboto;
+    word-spacing: 10px;
+    stroke: #ff0000;
+    font-size: 150px;
+    font-weight: 700;
+    stroke-width: 2;
+    animation: textAnimate 2s infinite alternate;
+
+}
+
+@keyframes textAnimate {
+    0% {
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset: 20%;
+        fill: transparent
+    }
+
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffstet: -20%;
+        fill: hsla(189, 68%, 75%, 0%)
+    }
+
+}

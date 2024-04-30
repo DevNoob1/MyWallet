@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+
+* {
+    margin: 0;
+    /* height: 100%; */
+}
+
+body {
+    padding: 8.5%;
+    background: url('./mesh-322.png');
+    color: white;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.de {
+    z-index: 1;
+    position: fixed;
+    top: 80px;
+    left: 800px;
+}
+
+.app {
+    position: relative;
+    /* Ensure z-index works */
+    z-index: 9;
+    /* Increase z-index to appear above the balls */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

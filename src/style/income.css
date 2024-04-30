@@ -1,0 +1,80 @@
+.income-form {
+    background-color: #2c2733;
+    color: #fff;
+    width: 60%;
+    padding: 20px;
+    margin-left: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: border 0.3s ease-in-out;
+}
+
+.income-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: larger;
+    color: #fff;
+    text-align: left;
+    font-weight: 100;
+}
+
+.income-form input[type="number"],
+.income-form input[type="text"],
+.income-form input[type="date"],
+.income-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #524c68;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.income-form input[type="number"]:focus,
+.income-form input[type="text"]:focus,
+.income-form input[type="date"]:focus,
+.income-form button:focus {
+    color: #fff;
+    outline: none;
+}
+
+.income-form input[type="number"]:hover,
+.income-form input[type="text"]:hover,
+.income-form input[type="date"]:hover,
+.income-form button:hover,
+.income-form select:hover {
+    background-color: #6a4c93;
+    color: #fff;
+}
+
+.income-form button {
+    font-weight: bold;
+}
+
+.income-form .new-source {
+    width: 100%;
+    color: white;
+    gap: 100px;
+    display: flex;
+}
+
+.income-form select {
+    background-color: #524c68;
+    color: #fff;
+
+}
+
+.income-form option {
+    background-color: #0d041bf6;
+    color: #fff;
+
+}
+
+
+.new-source input[type="text"]::placeholder {
+    color: #ffffff;
+    /* Change placeholder color to a darker gray */
+}

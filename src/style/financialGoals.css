@@ -1,0 +1,32 @@
+.table-container {
+    margin: 20px;
+}
+
+.monthly-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #222;
+    color: #fff;
+}
+
+.monthly-table th,
+.monthly-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.monthly-table th {
+    background-color: #333;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.red {
+    color: #ff6666;
+}
+
+.green {
+    color: #66cc66;
+}

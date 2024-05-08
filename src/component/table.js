@@ -7,6 +7,7 @@ const Overview = () => {
     const [incomeData, setIncomeData] = useState([]);
     const [spendingData, setSpendingData] = useState([]);
     const [goalData, setGoalData] = useState([]);
+    const [billData, setBillData] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -19,6 +20,9 @@ const Overview = () => {
 
                 const goalResult = await supabase.from('goal').select('goal, amount');
                 setGoalData(goalResult.data || []);
+
+                const billResult = await supabase.from('bill').select('title, description, due, status');
+                setBillData(billResult.data || []);
             } catch (error) {
                 console.error('Error fetching data:', error.message);
             }
@@ -74,24 +78,49 @@ const Overview = () => {
                 </div>
 
             </div>
-            <div className="fade-in" style={{ flex: '1' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>Spending Table</h2>
-                <table className="fade-in active" style={{ width: '100%', borderCollapse: 'collapse', fontSize: '16px', color: 'black', backgroundColor: '#444', borderRadius: '8px', padding: '15px' }}>
-                    <thead style={{ backgroundColor: '#555', color: 'white' }}>
-                        <tr>
-                            <th style={{ padding: '15px', textAlign: 'left' }}>Goal</th>
-                            <th style={{ padding: '15px', textAlign: 'left' }}>Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {goalData.map((item, index) => (
-                            <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#555' : '#444' }}>
-                                <td style={{ padding: '15px', textAlign: 'left', color: 'white' }}>{item.goal}</td>
-                                <td style={{ padding: '15px', textAlign: 'left', color: 'white' }}>{item.amount}</td>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <div className="fade-in" style={{ flex: '1' }}>
+                    <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>Spending Table</h2>
+                    <table className="fade-in active" style={{ width: '100%', borderCollapse: 'collapse', fontSize: '16px', color: 'black', backgroundColor: '#444', borderRadius: '8px', padding: '15px' }}>
+                        <thead style={{ backgroundColor: '#555', color: 'white' }}>
+                            <tr>
+                                <th style={{ padding: '15px', textAlign: 'left' }}>Goal</th>
+                                <th style={{ padding: '15px', textAlign: 'left' }}>Amount</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            {goalData.map((item, index) => (
+                                <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#555' : '#444' }}>
+                                    <td style={{ padding: '15px', textAlign: 'left', color: 'white' }}>{item.goal}</td>
+                                    <td style={{ padding: '15px', textAlign: 'left', color: 'white' }}>{item.amount}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+                <div className="fade-in" style={{ flex: '1', marginTop: '40px' }}>
+                    <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>Bill Table</h2>
+                    <table className="fade-in active" style={{ width: '100%', borderCollapse: 'collapse', fontSize: '16px', color: 'black', backgroundColor: '#444', borderRadius: '8px', padding: '15px' }}>
+                        <thead style={{ backgroundColor: '#555', color: 'white' }}>
+                            <tr>
+                                <th style={{ padding: '15px', textAlign: 'left' }}>Title</th>
+                                <th style={{ padding: '15px', textAlign: 'left' }}>Description</th>
+                                <th style={{ padding: '15px', textAlign: 'left' }}>Due</th>
+                                <th style={{ padding: '15px', textAlign: 'left' }}>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {billData.map((item, index) => (
+                                <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#555' : '#444' }}>
+                                    <td style={{ padding: '15px', textAlign: 'left', color: 'white' }}>{item.title}</td>
+                                    <td style={{ padding: '15px', textAlign: 'left', color: 'white' }}>{item.description}</td>
+                                    <td style={{ padding: '15px', textAlign: 'left', color: 'white' }}>{item.due}</td>
+                                    <td style={{ padding: '15px', textAlign: 'left', color: 'white' }}>{item.status}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     );

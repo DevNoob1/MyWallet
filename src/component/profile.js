@@ -59,6 +59,7 @@ const Profile = () => {
         fetchExpensesData();
     }, []);
 
+
     useEffect(() => {
         // Calculate total balance by subtracting total expenses from total income
         const balance = totalIncome - totalExpenses;

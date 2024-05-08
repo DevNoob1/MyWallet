@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Profile from './component/profile';
 import Table from './component/table.js';
 import Inputs from './component/input.js';
+import Reminder from './component/reminder.js';
 import Over from './component/over';
 import Loading from './component/loading';
 import './App.css';
@@ -30,6 +31,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/table" element={<Table />} />
             <Route path="/input" element={<Inputs />} />
+            <Route path="/reminder" element={<Reminder />} />
           </Routes>
         </div>
       )}

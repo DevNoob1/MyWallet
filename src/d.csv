@@ -1,13 +1,16 @@
-month,goal,amount
-January,4321,5432
-February,5678,6543
-March,6789,7654
-April,3456,4567
-May,7890,8901
-June,1234,2345
-July,9876,8765
-August,5432,4321
-September,8765,9876
-October,6543,7654
-November,2109,3210
-December,8765,5432
+title,description,due,status
+Electricity Bill,Pay monthly electricity bill,2024-06-15,Pending
+Savings Deposit,Transfer savings to investment account,2024-07-01,Upcoming
+Car Insurance Renewal,Renew car insurance policy,2024-08-10,Completed
+Monthly Savings Transfer,Transfer savings to separate account,2024-07-05,Pending
+Credit Card Payment,Pay off credit card balance,2024-06-30,Upcoming
+Doctor's Appointment,Annual health checkup,2024-07-20,Upcoming
+Project Deadline,Submit project report,2024-06-25,Pending
+Meeting with Client,Discuss project requirements,2024-07-08,Upcoming
+Fitness Class,Attend yoga session,2024-07-03,Completed
+House Rent Payment,Pay monthly rent,2024-06-30,Completed
+Shopping for Groceries,Buy groceries for the week,2024-06-22,Pending
+Dentist Appointment,Visit dentist for checkup,2024-07-15,Upcoming
+Vacation Planning,Plan upcoming vacation itinerary,2024-08-01,Upcoming
+Dinner with Friends,Arrange dinner outing with friends,2024-07-12,Completed
+Family Gathering,Attend family reunion,2024-07-30,Upcoming
